@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MoviesBackendAngular": {
+    "AngularMoviesApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/movies-backend-angular",
+            "outputPath": "dist/angular-movies-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MoviesBackendAngular:build:production"
+              "buildTarget": "AngularMoviesApp:build:production"
             },
             "development": {
-              "buildTarget": "MoviesBackendAngular:build:development"
+              "buildTarget": "AngularMoviesApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MoviesBackendAngular:build"
+            "buildTarget": "AngularMoviesApp:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "b4c18b29-72e4-4ab1-868a-81ac5279761c"
   }
 }
